@@ -1,0 +1,54 @@
+body {
+  background-color: #000;
+  color: #bbb;
+}
+
+.format-table {
+  border-bottom: 1px solid #bbb;
+}
+.format-table td {
+  border: inherit;
+}
+.format-table td a {
+  color: inherit;
+  display: block;
+}
+.format-table tr:hover {
+  background: #bbb !important;
+  color: #444;
+}
+
+.format-navbar {
+  background: #444;
+}
+.format-navbar .format-brand {
+  color: #bbb;
+}
+.format-navbar ul li a {
+  color: #fff !important;
+}
+.format-navbar ul li:hover {
+  background-color: #bbb;
+}
+.format-navbar ul li:hover a {
+  color: #444 !important;
+}
+
+.page-header, .format-table > caption {
+  text-align: center;
+  color: #aaa000;
+}
+
+.format-author {
+  color: #77e6e6;
+  margin-top: 10px;
+  border-top: 2px dotted #fff;
+}
+
+.format-content img {
+  margin: auto;
+}
+
+.region-sidebar-second {
+  background-color: #444;
+}

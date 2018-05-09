@@ -1,0 +1,13 @@
+.margin5{
+		margin-top: 5px;
+		margin-bottom: 5px;		
+}
+
+.format-table{
+	tr{
+		td{
+			a{color: inherit; display: block;}
+		}
+		&:hover{background: #444!important; color: #bbb;}
+	}
+}

@@ -1,0 +1,27 @@
+.margin5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.format-table tr td a {
+  color: inherit;
+  display: block;
+}
+.format-table tr:hover {
+  background: #444 !important;
+  color: #bbb;
+}
+
+.float-right {
+  float: right;
+}
+
+.format-navbar {
+  margin-top: 20px;
+}
+.format-navbar .format-brand {
+  font-size: 35px;
+}
+.format-navbar .image-logo {
+  width: 60px;
+}

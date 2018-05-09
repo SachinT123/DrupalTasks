@@ -1,0 +1,7 @@
+module_1.page1:
+  path: '/myPage'
+  defaults:
+    _controller: '\Drupal\module_1\Controller\CustomController::PageContent'
+    _title: 'Welcome'
+  requirements:
+    _permission: 'access content'

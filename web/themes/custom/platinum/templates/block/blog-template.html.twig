@@ -1,0 +1,17 @@
+
+<div class="table-responsive">
+<table class="table table-hover format-table">
+<caption><h2>BLOGS</h2></caption>
+{% for item in var %}
+	<tr>
+		<td>
+			<em><strong><a href = {{item.url}}>{{ item.title }}</a></strong></em>
+		</td>
+	</tr>
+{% endfor %}
+
+
+
+</table>
+
+</div>

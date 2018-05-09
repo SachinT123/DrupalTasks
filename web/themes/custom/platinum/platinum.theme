@@ -1,0 +1,19 @@
+<?php 
+
+function platinum_preprocess_node(&$variables) {
+	$node = \Drupal::routeMatch()->getParameter('node');
+
+	if($node){
+		if($node->getType() == 'blogs'){
+			$variables['#attached']['library'][] = 'platinum/blog-styling';
+		}
+	}
+
+}
+
+
+
+
+
+
+ ?>

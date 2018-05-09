@@ -1,0 +1,19 @@
+name: platinum
+description: 'Custom theme created by Me'
+type: theme
+core: 8.x
+base theme: bootstrap
+
+#Define libraries group to add css/js
+libraries:
+  - platinum/global-styling
+
+#Regions
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'

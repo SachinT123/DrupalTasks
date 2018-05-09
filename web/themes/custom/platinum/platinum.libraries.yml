@@ -1,0 +1,10 @@
+global-styling:
+  css:
+    component:
+      css/style.css: {}
+
+blog-styling:
+  css:
+    theme:
+      css/blog-style.css: {}
+    
