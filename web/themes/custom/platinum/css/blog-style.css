@@ -3,17 +3,17 @@ body {
   color: #bbb;
 }
 
-.format-table {
+.format-table-blog {
   border-bottom: 1px solid #bbb;
 }
-.format-table td {
+.format-table-blog td {
   border: inherit;
 }
-.format-table td a {
+.format-table-blog td a {
   color: inherit;
   display: block;
 }
-.format-table tr:hover {
+.format-table-blog tr:hover {
   background: #bbb !important;
   color: #444;
 }
@@ -34,7 +34,7 @@ body {
   color: #444 !important;
 }
 
-.page-header, .format-table > caption {
+.page-header, .format-table-blog caption {
   text-align: center;
   color: #aaa000;
 }

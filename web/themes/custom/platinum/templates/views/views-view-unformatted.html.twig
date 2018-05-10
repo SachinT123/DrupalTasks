@@ -18,14 +18,8 @@
  */
 #}
 
-{% for row in rows %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row',
-      'format-row-blog',
-    ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{ row.content }}
+{% for item in rows %}
+   <div class="views-row format-row-blog">
+    {{ item.content }}
   </div>
 {% endfor %}
