@@ -147,6 +147,25 @@
                 }
             }
         },
+        "jquery.image-picker": {
+            "_webform": true,
+            "type": "package",
+            "package": {
+                "name": "jquery/image-picker",
+                "version": "0.3.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.image-picker"
+                },
+                "dist": {
+                    "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
         "jquery.inputmask": {
             "_webform": true,
             "type": "package",
@@ -340,6 +359,7 @@
         "drupal/webform": "^5.0@RC",
         "drush/drush": "^9.0.0",
         "jquery/geocomplete": "1.7.0",
+        "jquery/image-picker": "0.3.0",
         "jquery/inputmask": "3.3.11",
         "jquery/intl-tel-input": "12.1.12",
         "jquery/rateit": "1.1.1",

@@ -34,15 +34,18 @@ class TestBlock extends BlockBase {
 			->getStorage('node')
 			->loadMultiple($nids);
 
-		$nodeTitle = array();
-
+		$node = array();
 		foreach ($nodes as $key => $value) {
-			$nodeTitle[] = array('title' => $nodes[$key]->getTitle(), 'url' => $nodes[$key]->url('canonical'));
+			$file_id = $value->get('field_image')->getValue()[0]['target_id'];
+			$file_path = file_load($file_id)->getFileUri();
+			$style = \Drupal::entityTypeManager()->getStorage('image_style')->load('thumbnail');
+			$img_url = $style->buildUrl($file_path);
+			$node[] = array('title' => $nodes[$key]->getTitle(), 'url' => $nodes[$key]->url('canonical'), 'img' => $img_url, );
 		}
 
-		// kint($nodes);
+		// kint($a);
 		// die();
-		return array('#theme' => 'blog_template','#var' => $nodeTitle);
+		return array('#theme' => 'blog_template','#var' => $node);
 		
 	}
 }

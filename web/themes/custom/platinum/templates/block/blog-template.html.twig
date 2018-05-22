@@ -1,11 +1,14 @@
 
 <div class="table-responsive">
-<table class="table table-hover format-table-blog">
+<table class="table table-hover table-bordered format-table-blog">
 <caption><h2>BLOGS</h2></caption>
 {% for item in var %}
 	<tr>
 		<td>
-			<em><strong><a href = {{item.url}}>{{ item.title }}</a></strong></em>
+			<a href = {{ item.url }}>
+				<p><em>{{ item.title }}</em></p>
+				<img src= {{ item.img }}>
+			</a>
 		</td>
 	</tr>
 {% endfor %}

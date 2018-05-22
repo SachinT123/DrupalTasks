@@ -1,5 +1,5 @@
 name: Custom Module 1
-description: This is the first custom module created by Me.
+description: This is the first custom module created by me.
 type: module
 package: Custom
 core: 8.x
